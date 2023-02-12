@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-header{
+body {
+    font-family: "Comic+Comic+Neue:ital,wght@1,700";
+}
+
+header {
     position: relative;
 }
 
@@ -34,7 +40,7 @@ h1 {
     object-fit: cover;
 }
 
-nav{
+nav {
     position: absolute;
     top: 5rem;
     right: 1rem;
@@ -46,31 +52,32 @@ nav{
     height: 30px;
     max-width: 100px;
     text-align: center;
-    vertical-align:middle;
+    vertical-align: middle;
     padding-top: 4px;
     background-color: #4472C4;
     border: 2px solid black;
     color: white;
     text-decoration: none;
+    box-shadow: 10px 5px #211915;
 }
 
-.head-menu:hover{
+.head-menu:hover {
     background-color: #70AD47;
 }
 
-.head-menu:active{
+.head-menu:active {
     background-color: #70AD47;
 }
 
-main{
+main {
     position: relative;
 }
 
-.main-figure{
+.main-figure {
     width: 15%;
 }
 
-h5{
+h5 {
     display: inline-block;
     width: 100%;
     height: 2em;
@@ -81,13 +88,14 @@ h5{
     padding-top: 10px;
 }
 
-.main-img1{
+.main-img1 {
     width: 100%;
     height: auto;
     object-fit: scale-down;
+    background-color: red;
 }
 
-main>div{
+main>div {
     height: 250px;
     position: relative;
     top: 50px;
@@ -97,25 +105,50 @@ main>div{
 
 }
 
-section{
+section {
     width: 80%;
     position: absolute;
     top: 0px;
     right: 20px;
 }
 
-li{
-   list-style: none;
-   font-size:x-large;
-   margin-top: 2rem;
+.contact-content{
+    height: 33vh;
+    max-height: 400px;
+    
+}
+
+.contact-section{
+    margin-top: 50px;
+}
+
+li {
+    list-style: none;
+    font-size: x-large;
+}
+
+li, .section-element{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .img-final{
-    position:sticky;
-    top:0px;
-    width: 100%;
-    height:100vh;
     background-image: url(./assets/hockey_1.jpg);
+}
+
+.img-final-about{
+    background-image:url(./assets/hockey_2.jpg);
+}
+
+.img-final-contact{
+    background-image: url(./assets/hockey_3.jpg);
+}
+
+.img-final, .img-final-about, .img-final-contact {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 80vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
