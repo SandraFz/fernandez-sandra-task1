@@ -10,6 +10,15 @@ body {
     font-family: "Comic+Comic+Neue:ital,wght@1,700";
 }
 
+p, span, li{
+    font-size: 1.25rem;
+
+}
+
+/* p:not(.li-rules){
+    text-indent: 2rem;
+} */
+
 header {
     position: relative;
 }
@@ -76,14 +85,16 @@ main {
 .main-figure {
     width: 15%;
 }
-
-h5 {
+h5{
     display: inline-block;
     width: 100%;
     height: 2em;
     background-color: black;
     color: white;
     font-size: 35px;
+}
+
+h5:not(.rules-main-h5){
     text-align: center;
     padding-top: 10px;
 }
@@ -98,14 +109,13 @@ h5 {
 main>div {
     height: 250px;
     position: relative;
-    top: 50px;
+    /* top: 50px; */
     z-index: 2;
     padding: 5px;
     background-color: white;
-
 }
 
-section,.contact-section {
+section:not(.rules-section),.contact-section {
     width: 80%;
     position: absolute;
     top: 0px;
@@ -115,14 +125,14 @@ section,.contact-section {
 .contact-content{
     height: 33vh;
     max-height: 400px;
-    
+   
 }
 
 .contact-section{
     margin-top: 50px;
 }
 
-li {
+li:no(.li-rules) {
     list-style: none;
     font-size: x-large;
 }
@@ -151,6 +161,61 @@ li, .section-element{
     height: 80vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+/*Rules*/
+
+.main-header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 5rem;
+    padding: 1em;
+    background-color: black;
+    box-sizing: content-box;
+} 
+
+.rules-main-h5{
+    background-color: transparent;
+}
+
+.main-header>p{
+    color: white;
+}
+
+.rules-section{
+    /* background-color: coral; */
+    padding-left:2rem;
+    padding-right: 2rem;
+}   
+
+.rules-section-1, .rules-section-2{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.rules-section-1>h4, .rules-section-2>h4{
+    margin-bottom: 1rem;
+}
+
+ol, .rules-ul, dl{
+    text-align: justify;
+    list-style-position: inside ;
+} 
+
+
+.rules-ul, .last-item{
+    list-style-position: inside;
+}
+
+.rules-ul{
+    list-style-type:lower-alpha;
+}
+
+.last-item{
+    margin-left: 3rem;
 }
 
 
