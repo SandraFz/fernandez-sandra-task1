@@ -10,9 +10,12 @@ body {
     font-family: "Comic+Comic+Neue:ital,wght@1,700";
 }
 
-p, span, li{
+p, span, li, table{
     font-size: 1.25rem;
+}
 
+span{
+    font-weight: bold;
 }
 
 /* p:not(.li-rules){
@@ -78,7 +81,7 @@ nav {
     background-color: #70AD47;
 }
 
-main {
+main:not(.schedule-main) {
     position: relative;
 }
 
@@ -132,7 +135,7 @@ section:not(.rules-section),.contact-section {
     margin-top: 50px;
 }
 
-li:no(.li-rules) {
+li:not(.li-rules>li, .rules-ul>li, .last-item) {
     list-style: none;
     font-size: x-large;
 }
@@ -165,7 +168,7 @@ li, .section-element{
 
 /*Rules*/
 
-.main-header{
+.main-header, .schedule-main-header{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +205,7 @@ li, .section-element{
 
 ol, .rules-ul, dl{
     text-align: justify;
-    list-style-position: inside ;
+    list-style-position: inside;
 } 
 
 
@@ -217,5 +220,60 @@ ol, .rules-ul, dl{
 .last-item{
     margin-left: 3rem;
 }
+
+.schedule-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.schedule-main-header{
+    width: 100%;
+}
+
+.schedule-section{
+    width: 600px;
+    max-width: 60%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.schedule-sbtt{
+    color:white;
+}
+
+table{
+    height: 400px;
+}
+
+.td1{
+    text-align: center;
+}
+
+.col-1, thead{
+    background-color: #D1D1D1;
+    border: 2px solid #D1D1D1;
+}
+
+.schedule-section-1{
+    /* background-color: aqua; */
+    width: 80%;
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.schedule-contact{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+
 
 
