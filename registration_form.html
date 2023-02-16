@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="shortcut icon" href="./assets/logo_mighty_ducks-01.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="title">
+            <h1>
+                Migthy Ducks Hockey League
+            </h1>
+        </div>
+        <figure class="head-figure">
+            <!-- <img class="head-img" src="./assets/design1_image2-t2.jpg" alt=""> -->
+        </figure>
+
+        <nav>
+            <a class="head-menu" href="./index.html" target="_blank">Home</a>
+            <a class="head-menu" href="./about.html" target="_blank">About MDHL</a>
+            <a class="head-menu" href="./contact.html">Contact</a>
+            <a class="head-menu" href="./rules.html" target="_blank">Rules</a>
+            <a class="head-menu" href="./schedule.html" target="_blank">Schedule</a>
+            <a class="head-menu" href="#" target="_blank">Registration</a>
+
+        </nav>
+    </header>
+
+    <main class="rules-main">
+            <h5>
+                Registration Form
+            </h5>
+
+        <div class="registration-section">
+
+            <form action="./show_data.html" method="get" target="_blank">
+                <!-- Datos personales -->
+                <fieldset>
+                    <label for="first-name">
+                        Player's first name:
+                        <input type="text" name="first-name" maxlength="15">
+                    </label>
+                    <label for="last-name">
+                        Last last 
+                        <input type="text" name="last-name" maxlength="15">
+                    </label>
+                    <label for="street-address">
+                        Street Address
+                        <input type="text" name="street-address">
+                    </label>
+                    <label for="city">
+                        City:
+                        <input type="text" name="city" maxlength="20">
+                    </label>
+                    <label for="zip-code">
+                        Zip Code:
+                        <input type="number" name="zip-code" maxlength="6">
+                    </label>
+                    <label for="birth-date">
+                        Birth Date:
+                        <input type="date" name="birth-date">
+                    </label>
+                        <legend>Genre:</legend>
+                        <label for="genre">
+                            female 
+                            <input type="radio" name="genre" value="female">
+                        </label>
+                        <label for="genre">
+                            male 
+                            <input type="radio" name="genre" value="male">
+                        </label>
+
+                </fieldset>
+                <input type="submit">
+            </form>
+
+
+            <!-- <div class="rules-section-1">
+                
+            </div> -->
+        </div>
+    </main>
+</body>
+
+</html>
