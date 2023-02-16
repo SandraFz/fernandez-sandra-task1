@@ -18,10 +18,6 @@ span{
     font-weight: bold;
 }
 
-/* p:not(.li-rules){
-    text-indent: 2rem;
-} */
-
 header {
     position: relative;
 }
@@ -88,6 +84,7 @@ main:not(.schedule-main) {
 .main-figure {
     width: 15%;
 }
+
 h5{
     display: inline-block;
     width: 100%;
@@ -276,6 +273,190 @@ table{
 
 /* Registration_form */
 
+.registration-main{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+form{
+    position:absolute;
+    top:50px;
+    /* background-color: blue; */
+    width: 95%;
+    height: 50vh;
+}
+
+.personal-data{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+fieldset{
+    border:none;
+}
+
+label:not(.grade>label){
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    flex-grow:2;    
+}
+
+input{
+    margin:3px;
+}
+
+.input-1{
+    flex-grow:5;
+}
+
+.input-2{
+    flex-grow:4;
+}
+
+.input-3{
+    flex-grow:3;
+}
+
+.input-4{
+    flex-grow:7;
+}
+
+.sub-form1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:8px;
+}
+
+.label-zip{
+    width: 40%;
+}
+
+.label-birth{
+    width:60%;
+    display: flex;
+    align-items: center;
+}
+
+.input-5{
+    width: 90px;
+    margin-right: 1px;
+}
+
+.input-6{
+ flex-grow: 10;    
+}
+
+.sub-form2, .sub-form3{
+    width: 100%;
+    background-color: red;
+    margin-top:.5rem;
+    display:flex;
+    gap:1rem;
+    justify-content: space-around;
+}
+
+.genre{
+    display:flex;
+    justify-content: center;
+    width: 60%;
+    gap:1rem;
+    background-color: violet;
+}
+
+.genre-label{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-form3{
+    flex-direction: column;
+}
+
+.sub-form3>div{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: #4472C4;
+}
+
+.grade{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.grade>label{
+    width:30%;
+    display: flex;
+background-color: aqua;
+}
+
+
+/* Queries */
+
+@media screen and (max-width: 360px) {
+
+    header{
+        position:relative;
+        padding: 0px auto;
+    }
+
+    .title {
+        height: 240px;
+        padding-top: .5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    nav {
+        position: absolute;
+        top:3.5rem;
+        width: 100%;
+        right: 0px;
+        padding-bottom: 5px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto 10px;
+    }
+    
+    .head-menu {
+        display: static;
+        width: 70%;
+        height: 30px;
+        max-width: 300px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 4px;
+        background-color: #4472C4;
+        border: 2px solid black;
+        color: white;
+        text-decoration: none;
+        box-shadow:none;
+    }
+
+    .head-figure {
+        height: 150px;
+        background-repeat: no-repeat;
+    }
+    
+    h5{
+        height: 2em;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        padding-top: 0px;
+    }
+    }
 
 

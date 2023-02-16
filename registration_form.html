@@ -12,14 +12,15 @@
 
 
 <body>
-    <header>
+    <!-- <header>
+
+        <div class="header"></div>
         <div class="title">
             <h1>
                 Migthy Ducks Hockey League
             </h1>
         </div>
         <figure class="head-figure">
-            <!-- <img class="head-img" src="./assets/design1_image2-t2.jpg" alt=""> -->
         </figure>
 
         <nav>
@@ -29,63 +30,90 @@
             <a class="head-menu" href="./rules.html" target="_blank">Rules</a>
             <a class="head-menu" href="./schedule.html" target="_blank">Schedule</a>
             <a class="head-menu" href="#" target="_blank">Registration</a>
-
         </nav>
-    </header>
+    </header> -->
 
-    <main class="rules-main">
-            <h5>
-                Registration Form
-            </h5>
+    <main class="registration-main">
+        <h5>
+            Registration Form
+        </h5>
 
-        <div class="registration-section">
-
-            <form action="./show_data.html" method="get" target="_blank">
-                <!-- Datos personales -->
-                <fieldset>
-                    <label for="first-name">
-                        Player's first name:
-                        <input type="text" name="first-name" maxlength="15">
-                    </label>
-                    <label for="last-name">
-                        Last last 
-                        <input type="text" name="last-name" maxlength="15">
-                    </label>
-                    <label for="street-address">
-                        Street Address
-                        <input type="text" name="street-address">
-                    </label>
-                    <label for="city">
-                        City:
-                        <input type="text" name="city" maxlength="20">
-                    </label>
-                    <label for="zip-code">
+        <form action="./show_data.html" method="get" target="_blank">
+            <!-- Datos personales -->
+            <fieldset class="personal-data">
+                <label for="first-name">
+                    Player's first name:
+                    <input class="input-1" type="text" name="first-name" maxlength="15" id="first-name">
+                </label>
+                <label for="last-name">
+                    Last last:
+                    <input class="input-2" type="text" name="last-name" maxlength="15" id="last-name">
+                </label>
+                <label for="street-address">
+                    Street Address:
+                    <input class="input-3" type="text" name="street-address" id="street-address">
+                </label>
+                <label for="city">
+                    City:
+                    <input class="input-4" type="text" name="city" maxlength="20" id="city">
+                </label>
+                <fieldset class="sub-form1">
+                    <label for="zip-code" class="label-zip">
                         Zip Code:
-                        <input type="number" name="zip-code" maxlength="6">
+                        <input class="input-5" type="number" name="zip-code" max="6" id="zip-code">
                     </label>
-                    <label for="birth-date">
+                    <label for="birth-date" class="label-birth">
                         Birth Date:
-                        <input type="date" name="birth-date">
+                        <input class="input-6" type="date" name="birth-date" id="birth-date">
                     </label>
-                        <legend>Genre:</legend>
-                        <label for="genre">
-                            female 
+                </fieldset>
+                <fieldset class="sub-form2">
+                    <p>Genre:</p>
+                    <div class="genre">
+                        <label class="genre-label">
+                            female
                             <input type="radio" name="genre" value="female">
                         </label>
-                        <label for="genre">
-                            male 
+                        <label for="genre" class="genre-label">
+                            male
                             <input type="radio" name="genre" value="male">
                         </label>
-
+                    </div>
                 </fieldset>
-                <input type="submit">
-            </form>
-
-
-            <!-- <div class="rules-section-1">
-                
-            </div> -->
-        </div>
+                <fieldset class="sub-form3">
+                    <p>Grade:</p>
+                    <div>
+                        <div class="grade">
+                            <label for="grade">
+                                Pre-school
+                                <input type="radio" name="grade" value="pre-school" id="grade">
+                            </label>
+                            <label for="grade1">
+                                1<small>st</small>
+                                <input type="radio" name="grade" value="fist" id="grade1">
+                            </label>
+                            <label for="grade2">
+                                2<small>nd</small>
+                                <input type="radio" name="grade" value="second" id="grade2">
+                            </label>
+                            <label for="grade3">
+                                3<small>rd</small>
+                                <input type="radio" name="grade" value="third" id="grade3">
+                            </label>
+                            <label for="grade4">
+                                4<small>th</small>
+                                <input type="radio" name="grade" value="fourth" id="grade4">
+                            </label>
+                            <label for="grade5">
+                                5<small>th</small>
+                                <input type="radio" name="grade" value="fifth" id="grade5">
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <!-- <input type="submit"> -->
+        </form>
     </main>
 </body>
 
