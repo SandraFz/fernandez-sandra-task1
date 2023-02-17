@@ -39,74 +39,101 @@
         </h5>
 
         <form action="./show_data.html" method="get" target="_blank">
+
             <!-- Datos personales -->
             <fieldset class="personal-data">
-                <label for="first-name">
-                    Player's first name:
-                    <input class="input-1" type="text" name="first-name" maxlength="15" id="first-name">
-                </label>
-                <label for="last-name">
-                    Last last:
-                    <input class="input-2" type="text" name="last-name" maxlength="15" id="last-name">
-                </label>
+                <div class="names">
+                    <label for="first-name">
+                        Player's first name:
+                        <input class="input-1" type="text" name="first-name" maxlength="15" id="first-name">
+                    </label>
+                    <label for="last-name">
+                        Last last:
+                        <input class="input-2" type="text" name="last-name" maxlength="15" id="last-name">
+                    </label>
+
+                </div>
+
                 <label for="street-address">
                     Street Address:
                     <input class="input-3" type="text" name="street-address" id="street-address">
                 </label>
-                <label for="city">
-                    City:
-                    <input class="input-4" type="text" name="city" maxlength="20" id="city">
-                </label>
-                <fieldset class="sub-form1">
-                    <label for="zip-code" class="label-zip">
+
+                <div class="city-container">
+                    <label for="city">
+                        City:
+                        <input class="input-4" type="text" name="city" maxlength="20" id="city">
+                    </label>
+                    <!-- Inputs alternativos1 -->
+                    <label for="zip-code" class="label-zip-b">
                         Zip Code:
                         <input class="input-5" type="number" name="zip-code" id="zip-code">
                     </label>
-                    <label for="birth-date" class="label-birth">
+                </div>
+                <div class="birth-genre-data">
+
+                    <label for="birth-date" class="label-birth-b">
                         Birth Date:
                         <input class="input-6" type="date" name="birth-date" id="birth-date">
                     </label>
-                </fieldset>
-                <fieldset class="sub-form2">
-                    <p>Genre:</p>
-                    <div class="genre">
-                        <label class="genre-label" for="genre1">
-                            female
-                            <input type="radio" name="genre" value="female" id="genre1">
-                        </label>
-                        <label for="genre2" class="genre-label">
-                            male
-                            <input type="radio" name="genre" value="male" id="genre2">
-                        </label>
-                    </div>
-                </fieldset>
+                    <!-- Inputs alternativos2-->
+    
+        <fieldset class="sub-form1">
+            <label for="zip-code" class="label-zip">
+                Zip Code:
+                <input class="input-5" type="number" name="zip-code" id="zip-code">
+            </label>
+            <label for="birth-date" class="label-birth">
+                Birth Date:
+                <input class="input-6" type="date" name="birth-date" id="birth-date">
+            </label>
+        </fieldset>
+        <fieldset class="sub-form2">
+            <p>Genre:</p>
+            <div class="genre">
+                <label class="genre-label" for="genre1">
+                    female
+                    <input type="radio" name="genre" value="female" id="genre1">
+                </label>
+                <label for="genre2" class="genre-label">
+                    male
+                    <input type="radio" name="genre" value="male" id="genre2">
+                </label>
+            </div>
+        </fieldset>
+
+                </div>
+
+
                 <fieldset class="sub-form3">
                     <p>Grade:</p>
                     <div>
                         <div class="grade">
                             <label for="grade">
-                                Pre-school
                                 <input type="radio" name="grade" value="pre-school" id="grade">
+                                Pre-school
                             </label>
                             <label for="grade1">
-                                1<small>st</small>
                                 <input type="radio" name="grade" value="fist" id="grade1">
+
+                                1<small>st</small>
                             </label>
                             <label for="grade2">
-                                2<small>nd</small>
                                 <input type="radio" name="grade" value="second" id="grade2">
+
+                                2<small>nd</small>
                             </label>
                             <label for="grade3">
-                                3<small>rd</small>
                                 <input type="radio" name="grade" value="third" id="grade3">
+                                3<small>rd</small>
                             </label>
                             <label for="grade4">
-                                4<small>th</small>
                                 <input type="radio" name="grade" value="fourth" id="grade4">
+                                4<small>th</small>
                             </label>
                             <label for="grade5">
-                                5<small>th</small>
                                 <input type="radio" name="grade" value="fifth" id="grade5">
+                                5<small>th</small>
                             </label>
                         </div>
                     </div>
@@ -131,20 +158,20 @@
                 <p>(check all that apply)</p>
                 <div class="position-group-checkboxes">
                     <label for="forward">
-                        Forward
                         <input type="checkbox" name="forward" value="forward" id="forward">
+                        Forward
                     </label>
                     <label for="defense">
-                        Defense
                         <input type="checkbox" name="defense" value="defense" id="defense">
+                        Defense
                     </label>
                     <label for="midfield">
-                        Midfield
                         <input type="checkbox" name="midfield" value="midfield" id="midfield">
+                        Midfield
                     </label>
                     <label for="goalkeeper">
-                        Goalkeeper
                         <input type="checkbox" name="goalkeeper" value="goalkeeper" id="goalkeeper">
+                        Goalkeeper
                     </label>
                 </div>
             </fieldset>
@@ -165,35 +192,43 @@
                     </label>
                     <label for="small">
                         <input type="radio" name="size" id="small" value="Small">
-                        Small 
+                        Small
                     </label>
                     <label for="medium">
                         <input type="radio" name="size" id="medium" value="Medium">
                         Medium
                     </label>
                     <label for="large">
-                        <input type="radio" name="size" id="large" value="Large"> 
-                        Large 
+                        <input type="radio" name="size" id="large" value="Large">
+                        Large
                     </label>
                     <label for="extraLarge">
                         <input type="radio" name="size" id="extraLarge" value="E-Large">
-                        Extra Large 
+                        Extra Large
 
                     </label>
                 </div>
             </fieldset>
             <fieldset class="sub-form6">
                 <legend>Permission to Play</legend>
-                <p class="registration-txt">I, the parent or guardian of the minor registrant, agree that the registrant and I ell abide by all the rules of the Mighty Duchs Hockey League (MDHL). In recognizing the possibility of physical injury asociated with hockey and in consideration for the "League" acceptiing the registrant for its hockey programs and activities, I hereby relase, discherge, and/or otherwise indemnify MDHL, their employees and associated personnel ando volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, shich transportation.
-                    By signin below, I herebyagre andauthorizethe above. In addition, by signing below, l also acknowledge that I have read the cancellation policy and agree to its temr.</p>
-                    <label for="signature">
-                        Parent/Guardian Signature:
-                        <input type="text" name="signature" id="signature">
-                    </label>
-                    <label for="signature-date">
-                        Date:
-                        <input type="date" name="signature-date" id="signature-date">
-                    </label>
+                <p class="registration-txt">I, the parent or guardian of the minor registrant, agree that the registrant
+                    and I ell abide by all the rules of the Mighty Duchs Hockey League (MDHL). In recognizing the
+                    possibility of physical injury asociated with hockey and in consideration for the "League"
+                    acceptiing the registrant for its hockey programs and activities, I hereby relase, discherge, and/or
+                    otherwise indemnify MDHL, their employees and associated personnel ando volunteers, including the
+                    facilities used for practices and games, against any claim by or on behalf of the registrant as a
+                    result of the registrant's participation in the programand/orbeing transported to or from MDHL
+                    sponsored activities, shich transportation.
+                    By signin below, I herebyagre andauthorizethe above. In addition, by signing below, l also
+                    acknowledge that I have read the cancellation policy and agree to its temr.</p>
+                <label for="signature">
+                    Parent/Guardian Signature:
+                    <input type="text" name="signature" id="signature">
+                </label>
+                <label for="signature-date">
+                    Date:
+                    <input type="date" name="signature-date" id="signature-date">
+                </label>
             </fieldset>
             <input type="submit">
         </form>
