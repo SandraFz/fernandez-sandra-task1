@@ -79,14 +79,14 @@
                     <!-- Inputs alternativos2-->
     
         <fieldset class="sub-form1">
-            <label for="zip-code" class="label-zip">
+            <!-- <label for="zip-code1" class="label-zip">
                 Zip Code:
-                <input class="input-5" type="number" name="zip-code" id="zip-code">
+                <input class="input-5" type="number" name="zip-code" id="zip-code1">
             </label>
-            <label for="birth-date" class="label-birth">
+            <label for="birth-date1" class="label-birth">
                 Birth Date:
-                <input class="input-6" type="date" name="birth-date" id="birth-date">
-            </label>
+                <input class="input-6" type="date" name="birth-date" id="birth-date1">
+            </label> -->
         </fieldset>
         <fieldset class="sub-form2">
             <p>Genre:</p>
@@ -154,8 +154,8 @@
                 </label>
             </fieldset>
             <fieldset class="position-group">
-                <legend>What position(s) do you normally play? </legend>
-                <p>(check all that apply)</p>
+                <legend>What position(s) do you normally play? (check all that apply)</legend>
+
                 <div class="position-group-checkboxes">
                     <label for="forward">
                         <input type="checkbox" name="forward" value="forward" id="forward">
@@ -221,14 +221,16 @@
                     sponsored activities, shich transportation.
                     By signin below, I herebyagre andauthorizethe above. In addition, by signing below, l also
                     acknowledge that I have read the cancellation policy and agree to its temr.</p>
-                <label for="signature">
-                    Parent/Guardian Signature:
-                    <input type="text" name="signature" id="signature">
-                </label>
-                <label for="signature-date">
-                    Date:
-                    <input type="date" name="signature-date" id="signature-date">
-                </label>
+                <div class="signature-group">
+                    <label for="signature">
+                        Parent/Guardian Signature:
+                        <input type="text" name="signature" id="signature">
+                    </label>
+                    <label for="signature-date">
+                        Date:
+                        <input type="date" name="signature-date" id="signature-date">
+                    </label>
+                </div>
             </fieldset>
             <input type="submit">
         </form>
