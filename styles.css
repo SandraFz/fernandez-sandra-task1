@@ -10,7 +10,7 @@ body {
     font-family: "Comic+Comic+Neue:ital,wght@1,700";
 }
 
-p, span, li, table, h4{
+p:not(.registration-txt), span, li, table, h4{
     font-size: 1.25rem;
 }
 
@@ -298,9 +298,9 @@ fieldset{
     border:none;
 }
 
-label:not(.grade>label){
+label:not(.grade>label, .close-list, .position-group label, .sub-form5 label){
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
     flex-grow:2;    
@@ -352,13 +352,13 @@ input{
  flex-grow: 10;    
 }
 
-.sub-form2, .sub-form3{
+.sub-form2, .sub-form3, .sub-form5{
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     margin-top:.5rem;
     display:flex;
     gap:1rem;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .genre{
@@ -366,7 +366,7 @@ input{
     justify-content: center;
     width: 60%;
     gap:1rem;
-    background-color: violet;
+    /* background-color: violet; */
 }
 
 .genre-label{
@@ -382,21 +382,103 @@ input{
     width: 100%;
     display:flex;
     justify-content: center;
-    background-color: #4472C4;
+    /* background-color: #4472C4; */
 }
 
-.grade{
+.grade, .position-group-checkboxes{
     display:flex;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
 }
 
 .grade>label{
     width:30%;
     display: flex;
-background-color: aqua;
+/* background-color: aqua; */
 }
 
+.closest-school{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 1rem;
+    gap:1rem;
+/* background-color: yellow; */
+}
+
+.close-list{
+    /* background-color: #70AD47; */
+    display: flex;
+    margin-top:1rem;
+}
+
+.schools{
+    display: flex;
+    width: 120%;
+}
+
+.position-group{
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.position-group-checkboxes{
+    padding: 1rem;
+    width: 90%;
+    /* background-color: coral; */
+}
+
+.position-group label, .sub-form5 label{
+    width: 50%;
+}
+
+.size{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 1rem;
+    /* justify-content: left; */
+}
+
+.size>label{
+    display:flex;
+    justify-content: start;
+}
+
+input[type="submit"], .sub-form6, .registration-txt{
+    margin-top:1rem;
+}
+
+.registration-txt{
+margin-bottom: 1rem;
+}
+
+/*Mapas*/
+
+.mapas-group{
+    /* background-color: blue; */
+    width: 90%;
+    height: auto;
+    padding-top: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem;
+}
+
+iframe{
+    width: 300px;
+    height: 200px;
+    border-radius:10px;
+    box-shadow: 5px 5px rgba(33, 25, 21, 0.5) ;
+}
+
+iframe:hover{
+    transform: scale(1.1);
+}
 
 /* Queries */
 
@@ -404,7 +486,7 @@ background-color: aqua;
 
     header{
         position:relative;
-        padding: 0px auto;
+        /* padding:auto; */
     }
 
     .title {
@@ -422,16 +504,17 @@ background-color: aqua;
         position: absolute;
         top:3.5rem;
         width: 100%;
+        height: auto;
         right: 0px;
         padding-bottom: 5px;
         display:flex;
         flex-direction: column;
         align-items: center;
-        padding: auto 10px;
+        /* padding:10px 10px; */
     }
     
     .head-menu {
-        display: static;
+        display: inline-block;
         width: 70%;
         height: 30px;
         max-width: 300px;

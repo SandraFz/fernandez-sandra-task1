@@ -12,7 +12,7 @@
 
 
 <body>
-    <!-- <header>
+    <header>
 
         <div class="header"></div>
         <div class="title">
@@ -31,7 +31,7 @@
             <a class="head-menu" href="./schedule.html" target="_blank">Schedule</a>
             <a class="head-menu" href="#" target="_blank">Registration</a>
         </nav>
-    </header> -->
+    </header>
 
     <main class="registration-main">
         <h5>
@@ -60,7 +60,7 @@
                 <fieldset class="sub-form1">
                     <label for="zip-code" class="label-zip">
                         Zip Code:
-                        <input class="input-5" type="number" name="zip-code" max="6" id="zip-code">
+                        <input class="input-5" type="number" name="zip-code" id="zip-code">
                     </label>
                     <label for="birth-date" class="label-birth">
                         Birth Date:
@@ -70,13 +70,13 @@
                 <fieldset class="sub-form2">
                     <p>Genre:</p>
                     <div class="genre">
-                        <label class="genre-label">
+                        <label class="genre-label" for="genre1">
                             female
-                            <input type="radio" name="genre" value="female">
+                            <input type="radio" name="genre" value="female" id="genre1">
                         </label>
-                        <label for="genre" class="genre-label">
+                        <label for="genre2" class="genre-label">
                             male
-                            <input type="radio" name="genre" value="male">
+                            <input type="radio" name="genre" value="male" id="genre2">
                         </label>
                     </div>
                 </fieldset>
@@ -112,7 +112,90 @@
                     </div>
                 </fieldset>
             </fieldset>
-            <!-- <input type="submit"> -->
+            <fieldset class="closest-school">
+                <legend>Which elementary school do you live near?</legend>
+                <label for="schools" class="close-list">
+                    Closest School
+                    <select name="schools" id="schools">
+                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value="Howard A Yeager">Howard A Yeager</option>
+                        <option value="Marjorie P Hart">Marjorie P Hart</option>
+                        <option value="North Elementary">North Elementary</option>
+                        <option value="South Elementary">South Elementary</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset class="position-group">
+                <legend>What position(s) do you normally play? </legend>
+                <p>(check all that apply)</p>
+                <div class="position-group-checkboxes">
+                    <label for="forward">
+                        Forward
+                        <input type="checkbox" name="forward" value="forward" id="forward">
+                    </label>
+                    <label for="defense">
+                        Defense
+                        <input type="checkbox" name="defense" value="defense" id="defense">
+                    </label>
+                    <label for="midfield">
+                        Midfield
+                        <input type="checkbox" name="midfield" value="midfield" id="midfield">
+                    </label>
+                    <label for="goalkeeper">
+                        Goalkeeper
+                        <input type="checkbox" name="goalkeeper" value="goalkeeper" id="goalkeeper">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="sub-form5">
+                <legend>Uniform Size</legend>
+                <div class="size">
+                    <label for="youthSmall">
+                        <input type="radio" name="size" id="youthSmall" value="Y-Small">
+                        YouthSmall
+                    </label>
+                    <label for="youthMedium">
+                        <input type="radio" name="size" id="youthMedium" value="Y-Medium">
+                        Youth Medium
+                    </label>
+                    <label for="youthLarge">
+                        <input type="radio" name="size" id="youthLarge" value="Y-Large">
+                        Youth Large
+                    </label>
+                    <label for="small">
+                        <input type="radio" name="size" id="small" value="Small">
+                        Small 
+                    </label>
+                    <label for="medium">
+                        <input type="radio" name="size" id="medium" value="Medium">
+                        Medium
+                    </label>
+                    <label for="large">
+                        <input type="radio" name="size" id="large" value="Large"> 
+                        Large 
+                    </label>
+                    <label for="extraLarge">
+                        <input type="radio" name="size" id="extraLarge" value="E-Large">
+                        Extra Large 
+
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="sub-form6">
+                <legend>Permission to Play</legend>
+                <p class="registration-txt">I, the parent or guardian of the minor registrant, agree that the registrant and I ell abide by all the rules of the Mighty Duchs Hockey League (MDHL). In recognizing the possibility of physical injury asociated with hockey and in consideration for the "League" acceptiing the registrant for its hockey programs and activities, I hereby relase, discherge, and/or otherwise indemnify MDHL, their employees and associated personnel ando volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, shich transportation.
+                    By signin below, I herebyagre andauthorizethe above. In addition, by signing below, l also acknowledge that I have read the cancellation policy and agree to its temr.</p>
+                    <label for="signature">
+                        Parent/Guardian Signature:
+                        <input type="text" name="signature" id="signature">
+                    </label>
+                    <label for="signature-date">
+                        Date:
+                        <input type="date" name="signature-date" id="signature-date">
+                    </label>
+            </fieldset>
+            <input type="submit">
         </form>
     </main>
 </body>
