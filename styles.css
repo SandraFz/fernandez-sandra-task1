@@ -332,7 +332,7 @@ fieldset {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 input {
@@ -620,12 +620,12 @@ iframe:hover {
         flex-grow: 0;
     }
 
-    .city-container>label, .city-container label {
+    /* .city-container>label, .city-container label {
         background-color: peru;
-    }
+    } */
 
     .city, .label-zip-b{
-        background-color: #4472C4;
+        /* background-color: #4472C4; */
         width: 40%;
     }
 
